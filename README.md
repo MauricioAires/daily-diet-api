@@ -62,21 +62,34 @@ $ yarn knex migrate:rollback
 ### Transação
 
 - [x] **RF**
-  - [x] O usuário deve ser possível cadastrar uma nova transação;
-  - [x] O usuário deve poder obter um resumo da sua conta;
-  - [x] O usuário deve poder listar todas transações que já ocorreram;
-  - [x] O usuário deve poder visualizar uma transação única;
+  - [x] Deve ser possível criar um usuário
+  - [x] Deve ser possível registrar uma refeição feita, com as seguintes informações:
+        - Nome
+        - Descrição
+        - Data e Hora
+        - Está dentro ou não da dieta
+  - [x] Deve ser possível editar uma refeição, podendo alterar todos os dados
+  - [x] Deve ser possível apagar uma refeição
+  - [x] Deve ser possível recuperar as métricas de um usuário
+        - Quantidade total de refeições registradas
+        - Quantidade total de refeições dentro da dieta
+        - Quantidade total de refeições fora da dieta
+        - Melhor sequência de refeições dentro da dieta
+  - [x] Deve ser possível apagar uma refeição
+  - [x] Deve ser possível apagar uma refeição
 - [x] **RN**
-  - [x] A transação pode ser do tipo crédito  que somará ao valor total, ou débito que subtrairá;
-  - [x] Deve  ser possível identificar o usuário entre as requisições;
-  - [x] O usuário só pode visualizar transações o qual ele criou;
+  - [x] Deve ser possível identificar o usuário entre as requisições
+  - [x] As refeições devem ser relacionadas a um usuário.
+  - [x] O usuário só pode visualizar, editar e apagar as refeições o qual ele criou
 
 </details>
 
 ## Contribuição
 
-Contribuições são bem-vindas! Para contribuir, basta abrir uma issue ou pull request neste repositório.
+Contribuições são bem-vindas!
+
+Para contribuir, basta abrir uma issue ou pull request neste repositório.
 
 ## Autor
-
-Feito por Mauricio Aires 👋🏽
+|  [<img loading="lazy" src="https://github.com/MauricioAires.png" width=115><br><sub>Mauricio Aires 👋🏽</sub>](https://github.com/MauricioAires) |
+|  :---: |
