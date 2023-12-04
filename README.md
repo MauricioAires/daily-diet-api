@@ -39,6 +39,9 @@ $ yarn eslint src --ext .ts
 # Comando para identificar erros de lint e corrigir
 $ yarn eslint src --ext .ts --fix
 
+# Criar uma migrate
+$ npx knex migrate:make create_users_and_meals_tables
+
 # Executar a migration
 $ yarn knex migrate:latest
 
@@ -64,19 +67,18 @@ $ yarn knex migrate:rollback
 - [x] **RF**
   - [x] Deve ser possível criar um usuário
   - [x] Deve ser possível registrar uma refeição feita, com as seguintes informações:
-        - Nome
-        - Descrição
-        - Data e Hora
-        - Está dentro ou não da dieta
+    - Nome
+    - Descrição
+    - Data e Hora
+    - Está dentro ou não da dieta
   - [x] Deve ser possível editar uma refeição, podendo alterar todos os dados
-  - [x] Deve ser possível apagar uma refeição
-  - [x] Deve ser possível recuperar as métricas de um usuário
-        - Quantidade total de refeições registradas
-        - Quantidade total de refeições dentro da dieta
-        - Quantidade total de refeições fora da dieta
-        - Melhor sequência de refeições dentro da dieta
-  - [x] Deve ser possível apagar uma refeição
-  - [x] Deve ser possível apagar uma refeição
+  - [] Deve ser possível apagar uma refeição
+  - [x] Deve ser possível listar todas as refeições
+  - [] Deve ser possível recuperar as métricas de um usuário
+    - Quantidade total de refeições registradas
+    - Quantidade total de refeições dentro da dieta
+    - Quantidade total de refeições fora da dieta
+    - Melhor sequência de refeições dentro da dieta
 - [x] **RN**
   - [x] Deve ser possível identificar o usuário entre as requisições
   - [x] As refeições devem ser relacionadas a um usuário.
